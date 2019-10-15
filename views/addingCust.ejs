@@ -1,0 +1,20 @@
+<% include partials/header.ejs %>
+<div class="container">
+	<header class="jumbotron"><h3>Enter the details of the new customer to be added</h3>
+		<a class="btn btn-primary btn-large" href="/">Home</a>
+	</header>
+
+
+<form action="/" method="POST">
+	<input type="number" name="custId" placeholder="customer Id"><br>
+	<input type="text" name="custName" placeholder="Customer Name"><br>
+	<input type="text" name="password" placeholder="password"><br>
+	<input type="number" name="phoneNo" placeholder="Phone Number"><br>
+	<input type="text" name="email" placeholder="Email ID"><br>
+	<button>Submit!</button>
+</form>
+
+	
+</div>
+
+<% include partials/footer.ejs %>

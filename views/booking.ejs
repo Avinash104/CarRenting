@@ -1,0 +1,15 @@
+<% include partials/header.ejs %>
+<div class="container">
+	<header class="jumbotron"><h3>Filter your car according to your needs.</h3>
+		<a class="btn btn-primary btn-large" href="/">Home</a>
+	</header>
+
+
+<form action="/booking" method="POST">
+	<input type="text" name="vehicleModel" placeholder="vehicle Model">
+	<input type="number" name="seatCap" placeholder="seating Capacity">
+	<input type="number" name="rent" placeholder="Rent per Day">
+	<button>Search!</button>
+</form>
+
+<% include partials/footer.ejs %>

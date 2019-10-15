@@ -1,0 +1,19 @@
+<% include partials/header.ejs %>
+<div class="container">
+	<header class="jumbotron"><h3>Current list of cars</h3>
+		<p>Welcome to the Rent a Car</p>
+	<a class="btn btn-primary btn-large" href="/addingCar">add a new car</a>
+		<a class="btn btn-primary btn-large" href="/">Home</a>
+	</header>
+</div>
+<% cars.forEach(function(car){ %>
+	<li>
+		<%= car.vehicleId %>
+		<br><br><br>
+	</li>
+<% });%>
+
+
+
+
+<% include partials/footer.ejs %>
